@@ -3,11 +3,9 @@
   0% {
     transform: scale(0.1);
     opacity: 0;
-    color: red;
+    color: blue;
   }
-  60% {
-    transform: scale(1.2);
-    opacity: 1;
+  50% {
     color: green;
   }
   100% {
@@ -16,8 +14,36 @@
   }
 }
 
-.animate {
-  animation-duration: 2s;
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.animateText {
+  animation-duration: 3s;
   animation-name: bounceIn;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   color: orange;
+
+}
+
+.animate {
+  animation-duration: 3s;
+  animation-name: bounceIn;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.animateSpin {
+  border-radius: 50%;
+  animation: spin 3s infinite linear;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 2em;
+  box-shadow: 0 0 2em black;
 }

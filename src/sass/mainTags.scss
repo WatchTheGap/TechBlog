@@ -1,3 +1,25 @@
 main {
-  margin: 5%;
+  margin: auto;
+}
+
+.codeblock {
+  background-color: rgb(230,240, 240);
+  padding: 2em;
+  border: 2px solid black;
+  margin: 1em;
+  width: 50%;
+  position: relative;
+}
+
+code {
+  white-space: pre;
+}
+
+h2 {
+  text-align: center;
+}
+
+.animations {
+  text-align: center;
+  margin: auto;
 }

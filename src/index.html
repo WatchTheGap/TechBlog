@@ -12,7 +12,7 @@
     <main>
       <h2>Benefits of Using CSS Animations</h2>
     	<p>One major benefit of using CSS animations is that you don't need to know JavaScript!
-        Even if you write JavaScript, you might not want to weigh your application down
+        Even if you do write JavaScript, you might not want to weigh your application down
         with unnecesasry extras when you need just a few minor enhancements. Most CSS
         animations often perform better than simple JavaScript animations. The browser
         itself can optimize and increase performance by adjusting the frame rate within
@@ -21,13 +21,59 @@
       </p>
     </main>
     <main>
-      <h2>Bounce wit me</h2>
-      <p></p>
+      <h2>Bounce Wit Me</h2>
+      <p>So, what can you animate? Most elements on your page can be manipulated
+        with animations and transformations. The sorcery behind these animations
+        is in the keyframes that we assign to the elements. Keyframes are used to
+        set the starting and ending states of each animation. The animation
+        starts at 0% and ends at 100%, with any number of waypoints marked using
+        any percentage in between.
+</p>
       <section class="animations">
-        <p class="animate">lakjsdo;iqutoehldsbkjbwo</p>
-        <img class="animate" src="http://www.fillmurray.com/200/300" alt="bill murray">
+        <h2 class="animateText">Check me out! I'm bouncin' right in while I get my colors on!</h2>
+        <img class="animate" src="http://www.fillmurray.com/200/200" alt="bill murray">
+        <img class="animate" src="http://www.fillmurray.com/200/200" alt="bill murray">
       </section>
+      <p>In the section below, </p>
+
       <section class="codeblock">
+        <code>@keyframes bounceIn {
+          0% {
+            transform: scale(0.1);
+            opacity: 0;
+            color: red;
+          }
+          100% {
+            transform: scale(1);
+            color: orange;
+          }
+        }
+        .animate {
+          animation-duration: 2s;
+          animation-name: bounceIn;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          color: orange;
+        }
+      </code>
+    </section>
+    <section class="codeblock">
+      <img class="animateSpin" src="http://www.fillmurray.com/200/200" alt="bill murray">
+
+      <code>
+        @keyframes spin {
+          from {
+            transform: rotate(0deg);
+          }
+          to {
+            transform: rotate(360deg);
+          }
+        }
+        .animateSpin {
+          border-radius: 50%;
+          animation: spin 3s infinite linear;
+        }
+        </code>
 
       </section>
     </main>
