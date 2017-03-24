@@ -1,23 +1,21 @@
-
 @keyframes bounceIn {
   0% {
     transform: scale(0.1);
     opacity: 0;
-    color: red;
-  }
+    color: red; }
   60% {
     transform: scale(1.2);
     opacity: 1;
-    color: green;
-  }
+    color: green; }
   100% {
     transform: scale(1);
-    color: orange;
-  }
-}
-
+    color: orange; } }
 .animate {
   animation-duration: 2s;
   animation-name: bounceIn;
-  color: orange;
-}
+  color: orange; }
+
+main {
+  margin: 5%; }
+
+/*# sourceMappingURL=main.css.map */
