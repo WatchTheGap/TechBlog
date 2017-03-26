@@ -6,9 +6,8 @@ main {
   background-color: rgb(230,240, 240);
   padding: 2em;
   border: 2px solid black;
-  margin: 1em;
-  width: 50%;
   position: relative;
+  box-sizing: border-box;
 }
 
 code {

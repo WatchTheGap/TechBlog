@@ -1,4 +1,4 @@
-@keyframes bounceIn {
+@keyframes bounce {
   0% {
     transform: scale(0.1);
     opacity: 0;
@@ -15,16 +15,24 @@
     transform: rotate(360deg); } }
 .animateText {
   animation-duration: 3s;
-  animation-name: bounceIn;
+  animation-name: bounce;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  color: orange; }
+  color: orange;
+  width: 200px;
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
 
-.animate {
+.animateBounce {
   animation-duration: 3s;
-  animation-name: bounceIn;
+  animation-name: bounce;
   animation-iteration-count: infinite;
-  animation-direction: alternate; }
+  animation-direction: alternate;
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 .animateSpin {
   border-radius: 50%;
@@ -42,9 +50,8 @@ main {
   background-color: #e6f0f0;
   padding: 2em;
   border: 2px solid black;
-  margin: 1em;
-  width: 50%;
-  position: relative; }
+  position: relative;
+  box-sizing: border-box; }
 
 code {
   white-space: pre; }
@@ -56,7 +63,7 @@ h2 {
   text-align: center;
   margin: auto; }
 
-h1 {
+header {
   text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

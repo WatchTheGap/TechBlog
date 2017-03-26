@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <title>Tech Blog</title>
-    <link rel="stylesheet" href="sass/main.css">
+    <link rel='stylesheet' href='sass/main.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'
+    integrity='sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u' crossorigin='anonymous'>
   </head>
   <body>
-    <header>
-      <h1>CSS Animations</h1>
+    <header class='jumbotron'>
+      <h1>Don't Try This At Home</h1>
+      <p>A Guide To Animating Responsibly</p>
     </header>
     <main>
+
+    </main>
+    <main class='container'>
       <h2>Benefits of Using CSS Animations</h2>
     	<p>One major benefit of using CSS animations is that you don't need to know JavaScript!
         Even if you do write JavaScript, you might not want to weigh your application down
@@ -20,7 +26,7 @@
         more quickly and smoothly than their JavaScript counterparts.
       </p>
     </main>
-    <main>
+    <main class='container'>
       <h2>Bounce Wit Me</h2>
       <p>So, what can you animate? Most elements on your page can be manipulated
         with animations and transformations. The sorcery behind these animations
@@ -28,20 +34,24 @@
         set the starting and ending states of each animation. The animation
         starts at 0% and ends at 100%, with any number of waypoints marked using
         any percentage in between.
-</p>
-      <section class="animations">
-        <h2 class="animateText">Check me out! I'm bouncin' right in while I get my colors on!</h2>
-        <img class="animate" src="http://www.fillmurray.com/200/200" alt="bill murray">
-        <img class="animate" src="http://www.fillmurray.com/200/200" alt="bill murray">
-      </section>
-      <p>In the section below, </p>
+      </p>
 
-      <section class="codeblock">
-        <code>@keyframes bounceIn {
+      <p>Below you can see a few of the animation styles available next to the
+        code that created them. Each example utilizes multiple subclasses in order
+        to achieve the final effect.  </p>
+
+      <section class='codeblock col-lg-5'>
+        <img class='animateBounce' src='img/kirby_vector.png' alt='kirby'>
+        <h2 class='animateText'>Check me out! I'm bouncin' in while I get my colors on!</h2>
+
+        <code>@keyframes bounce {
           0% {
             transform: scale(0.1);
             opacity: 0;
             color: red;
+          }
+          50% {
+            color: green;
           }
           100% {
             transform: scale(1);
@@ -50,15 +60,20 @@
         }
         .animate {
           animation-duration: 2s;
-          animation-name: bounceIn;
+          animation-name: bounce;
           animation-iteration-count: infinite;
           animation-direction: alternate;
           color: orange;
         }
       </code>
     </section>
-    <section class="codeblock">
-      <img class="animateSpin" src="http://www.fillmurray.com/200/200" alt="bill murray">
+    <!-- <p class=col-lg-12>It is also important to note the difference between the individually listed
+      animation attributes above and the shorthand syntax in the example below.
+      When using the <code>animation:</code> tag, attributes can be strung together
+      using commas provided they are listed in the correct order.
+    </p> -->
+    <section class='codeblock col-lg-6 col-lg-offset-1'>
+      <img class='animateSpin' src='http://www.fillmurray.com/200/200' alt='bill murray'>
 
       <code>
         @keyframes spin {
