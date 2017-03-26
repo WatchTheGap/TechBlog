@@ -2,18 +2,10 @@ main {
   margin: auto;
 }
 
-.codeblock {
-  background-color: rgb(230,240, 240);
-  padding: 2em;
-  border: 2px solid black;
+pre {
   position: relative;
-  box-sizing: border-box;
 }
 
-code {
-  white-space: pre;
-  z-index: 1;
-}
 
 h2 {
   text-align: center;
@@ -22,4 +14,8 @@ h2 {
 .animations {
   text-align: center;
   margin: auto;
+}
+
+.kirby {
+  width: 50%;
 }

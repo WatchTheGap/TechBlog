@@ -1,13 +1,9 @@
 @keyframes bounce {
   0% {
     transform: scale(0.1);
-    opacity: 0;
-    color: blue; }
-  50% {
-    color: green; }
+    opacity: 0; }
   100% {
-    transform: scale(1);
-    color: orange; } }
+    transform: scale(1); } }
 @keyframes spin {
   from {
     transform: rotate(0deg); }
@@ -38,25 +34,32 @@
   to {
     transform: translate3d(0, 700px, 0);
     opacity: 1; } }
+@keyframes colors {
+  10% {
+    color: red; }
+  30% {
+    color: yellow; }
+  50% {
+    color: green; }
+  70% {
+    color: blue; }
+  90% {
+    color: purple; }
+  100% {
+    color: red; } }
 .hinge {
   animation-name: hinge;
   animation-duration: 3s;
   animation-delay: 3s; }
 
-.animateText {
-  animation-duration: 3s;
-  animation-name: bounce;
+.colors {
+  animation-duration: 6s;
+  animation-name: colors;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
-  color: orange;
-  width: 200px;
-  margin: 20px;
-  position: absolute;
-  right: 0;
-  bottom: 0; }
+  color: red; }
 
 .animateBounce {
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-name: bounce;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -76,16 +79,8 @@
 main {
   margin: auto; }
 
-.codeblock {
-  background-color: #e6f0f0;
-  padding: 2em;
-  border: 2px solid black;
-  position: relative;
-  box-sizing: border-box; }
-
-code {
-  white-space: pre;
-  z-index: 1; }
+pre {
+  position: relative; }
 
 h2 {
   text-align: center; }
@@ -93,6 +88,9 @@ h2 {
 .animations {
   text-align: center;
   margin: auto; }
+
+.kirby {
+  width: 50%; }
 
 header {
   text-align: center; }
