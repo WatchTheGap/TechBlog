@@ -9,12 +9,12 @@
 </head>
 <body>
   <header class='jumbotron'>
-    <h1>Don't Try This At Home</h1>
+    <h1 class='colors'>Don't Try This At Home</h1>
     <p class='hinge'>A Guide To Animating Responsibly</p>
   </header>
   <main class='container'>
-    <h2 class='colors'>So....What am I looking at?</h2>
-    <p>CSS animations are a simple, fun way to add some character to the user experience.
+    <h2 class='whatAmI'>So....What am I looking at?</h2>
+    <p class='well'>CSS animations are a simple, fun way to add some character to the user experience.
     Gone are the days of littering one's homepage with animated GIFs and loads of
     infinitely scrolling and blinking text. Maybe not gone, persay, but at the very
   least, most of the supurfluous glittering nonesense is now being executed with
@@ -23,7 +23,7 @@ continuously rendered. </p>
   </main>
   <main class='container'>
     <h2>Why would I use these things?</h2>
-    <p>Guess what? You don't need to know JavaScript to use CSS animations!
+    <p class='well'>Guess what? You don't need to know JavaScript to use CSS animations!
       Even if you do write JavaScript, you might not want to weigh your application down
       with unnecesasry extras when you need just a few minor enhancements. CSS
       animations often perform better than simple JavaScript animations. The browser
@@ -33,19 +33,23 @@ continuously rendered. </p>
     </p>
   </main>
   <main class='container'>
-    <h2>Bounce With Me</h2>
-    <p>So, what can you animate? Most elements on your page can be manipulated
+    <h2 class='bounceWithMe'>Bounce With Me</h2>
+    <p class='well'>So, what can you animate? Most elements on your page can be manipulated
       with animations and transformations that alter the element's color, size,
-      shape, or location. The sorcery behind these animations is in the keyframes
+      shape, or location. The
+      <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations'>sorcery</a>
+      behind these animations is in the keyframes
       assigned to the elements. Keyframes are used to set the starting and
       ending states of each animation. The animation starts at 0% and ends at
       100%, with any number of waypoints marked using any percentage in between.
     </p>
 
-    <p>Here are few of the animation styles available next to the
-      code that created them. Each example utilizes multiple subclasses in order
-      to achieve the final effect. It is important to note the difference between
-      the individually listed animation attributes in the <code>bounce</code>
+    <p class='well'>Here are a couple of
+      <a href='https://robots.thoughtbot.com/css-animation-for-beginners'>examples</a>
+      of the animation styles that are available
+      next to the code that created them. Each example utilizes multiple subclasses
+      in order to achieve the final effect. It is important to note the difference
+      between the individually listed animation attributes in the <code>bounce</code>
       example and the shorthand syntax used in the <code>spin</code> example.
       When using the <code>animation:</code> tag, attributes can be strung
       together using commas provided they are listed in the correct order. </p>
@@ -94,10 +98,22 @@ continuously rendered. </p>
       </code>
 
     </main>
-    <blockquote class='col-lg-6'>
-      <p>'Tis one thing to be tempted, another thing to fall.</p>
-      <footer>William Shakespeare, <cite title="Measure for Measure">Measure for Measure</cite></footer>
-    </blockquote>
+    <main class='container'>
+      <h2 class='temptation'>'Tis one thing to be tempted, another thing to fall.</h2>
+      <p class='well'>It is easy to get carried away with animations once you've lifted the lid
+        from Pandora's Box. In researching animation ettiquette and
+        <a href='https://www.html5rocks.com/en/tutorials/speed/high-performance-animations/'>implementation</a>,
+        I came across a recurring theme -
+        <a href='https://24ways.org/2014/five-ways-to-animate-responsibly/'>animate deliberately.</a>
+        Used intentionally as an engaging or interactive enhancement, CSS animations,
+        when used sparingly, offer the opportunity to elevate both the design and
+        the user experience of a website.
+        <a href='https://daneden.github.io/animate.css/'>The tools are out there. </a>
+        Offer the user feedback. Provide instructions.
+        Use them for art. Use them for emphasis. But don't go
+        <a href='https://s-media-cache-ak0.pinimg.com/736x/f1/fe/c2/f1fec21ea1cda35cb7b56194fddce49b.jpg'>crazy-go-nuts</a>.
+      </p>
+    </main>
 
   </body>
   </html>

@@ -38,7 +38,7 @@
   10% {
     color: red; }
   30% {
-    color: yellow; }
+    color: orange; }
   50% {
     color: green; }
   70% {
@@ -93,6 +93,7 @@ h2 {
   width: 50%; }
 
 header {
-  text-align: center; }
+  text-align: center;
+  background-color: #515f79; }
 
 /*# sourceMappingURL=main.css.map */
