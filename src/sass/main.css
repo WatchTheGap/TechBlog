@@ -82,7 +82,7 @@
 .bounceInDown {
   animation-name: bounceInDown;
   animation-duration: 1s;
-  animation-delay: 5s;
+  animation-delay: 6s;
   opacity: 0;
   animation-fill-mode: forwards; }
 
@@ -144,5 +144,11 @@ header {
   position: relative; }
   header h1 {
     font-family: 'Rock Salt', cursive; }
+
+footer {
+  padding: 2em;
+  border-top: solid 1px grey;
+  color: grey;
+  margin-top: 2em; }
 
 /*# sourceMappingURL=main.css.map */
