@@ -1,15 +1,14 @@
 
 main {
   margin: auto;
+  h2 {
+    text-align: center;
+    font-family: Courier, Times, serif;
+  }
 }
 
 pre {
   position: relative;
-}
-
-
-h2 {
-  text-align: center;
 }
 
 .animations {
@@ -19,4 +18,8 @@ h2 {
 
 .kirby {
   width: 50%;
+}
+
+.mainText {
+  font-size: 1.3em;
 }
