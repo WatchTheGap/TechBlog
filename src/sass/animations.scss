@@ -1,4 +1,3 @@
-
 @keyframes bounce {
   0% {
     transform: scale(0.1);
@@ -53,27 +52,6 @@
   to {
     transform: translate3d(0, 700px, 0);
     opacity: 1;
-  }
-}
-
-@keyframes colors {
-  10% {
-    color: red;
-  }
-  30% {
-    color: orange;
-  }
-  50% {
-    color: green;
-  }
-  70% {
-    color: blue;
-  }
-  90% {
-    color: purple;
-  }
-  100% {
-    color: red;
   }
 }
 
@@ -144,13 +122,6 @@
   animation-name: hinge;
   animation-duration: 3s;
   animation-delay: 3s;
-}
-
-.colors {
-  animation-duration: 6s;
-  animation-name: colors;
-  animation-iteration-count: infinite;
-  color: red;
 }
 
 .animateBounce {
